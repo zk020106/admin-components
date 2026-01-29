@@ -5,4 +5,7 @@ export default antfu({
     html: true,
     json: true,
   },
+  rules: {
+    'node/prefer-global/process': 'off',
+  },
 })
