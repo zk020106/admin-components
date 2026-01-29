@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
+    "scroll-into-view-if-needed": "^3.1.0",
     "tailwindcss": "^4.1.18",
     "vite-plugin-compression2": "^2.4.0",
     "vue": "^3.5.27"
