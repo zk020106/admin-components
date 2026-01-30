@@ -1,8 +1,3 @@
-import antfu from '@antfu/eslint-config'
+import { defineConfig } from './internal/lint-config/eslint-config';
 
-export default antfu({
-  formatters: true,
-  rules: {
-    'node/prefer-global/process': 'off',
-  },
-})
+export default defineConfig();

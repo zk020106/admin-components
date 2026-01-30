@@ -35,6 +35,34 @@
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never"
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // extensions
   "extensions.ignoreRecommendations": true,
@@ -78,6 +106,8 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "npm.packageManager": "pnpm",
 
+  "css.validate": false,
+
   // extension
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
@@ -87,9 +117,9 @@
 
   "stylelint.enable": true,
   "stylelint.packageManager": "pnpm",
-  "stylelint.validate": ["css", "less", "postcss", "scss", "vue"],
+  "stylelint.validate": ["css", "postcss", "vue"],
   "stylelint.customSyntax": "postcss-html",
-  "stylelint.snippet": ["css", "less", "postcss", "scss", "vue"],
+  "stylelint.snippet": ["css", "postcss", "vue"],
 
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.preferences.includePackageJsonAutoImports": "on",
