@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint-vue:
+      run: pnpm prettier --write {staged_files} && pnpm eslint --cache --fix {staged_files} && pnpm stylelint --fix --allow-empty-input {staged_files}
+      glob: '*.vue'
+    lint-js:
+      run: pnpm prettier --cache --ignore-unknown --write {staged_files} && pnpm eslint --cache --fix {staged_files}
+      glob: '*.{js,ts}'
+    lint-style:
+      run: pnpm prettier --cache --ignore-unknown --write {staged_files} && pnpm stylelint --fix --allow-empty-input {staged_files}
+      glob: '*.{styl,html,vue,css}'
+    lint-package:
+      run: pnpm prettier --cache --write {staged_files}
+      glob: package.json
+    lint-json:
+      run: pnpm prettier --cache --write --parser json {staged_files}
+      glob: '{!(package)*.json,*.code-snippets,.!(browserslist)*rc}'
