@@ -26,8 +26,8 @@ async function changeLanguage(lang: SupportedLanguagesType) {
 <template>
   <DropdownMenu>
     <DropdownMenuTrigger as-child>
-      <Button variant="ghost" size="icon" class="rounded-xl border bg-white">
-        <LucideLanguage class="h-4 w-4" />
+      <Button variant="ghost" size="icon-sm" class="rounded-xl border bg-white">
+        <LucideLanguage />
         <span class="sr-only">Switch language</span>
       </Button>
     </DropdownMenuTrigger>
