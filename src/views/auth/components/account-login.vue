@@ -130,7 +130,7 @@ onBeforeUnmount(() => {
               :src="captchaImg"
               alt="Captcha"
               class="size-full rounded-lg object-contain hover:cursor-pointer"
-            />
+            >
 
             <div
               v-if="isCaptchaExpired"
