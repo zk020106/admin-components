@@ -8,6 +8,8 @@ interface ImportMetaEnv {
   readonly VITE_API_PREFIX: string;
   readonly VITE_API_PROXY_URL: string;
   readonly VITE_ENABLE_DEVTOOLS: string;
+  readonly VITE_STORAGE_PREFIX: string;
+  readonly VITE_BACKEND_SUCCESS_CODE: string;
 }
 
 interface ImportMeta {
