@@ -1,6 +1,6 @@
 import type { CreateAxiosDefaults } from 'axios';
 import type { IAxiosRetryConfig } from 'axios-retry';
-import type { RequestOptions } from '@/types/axios';
+import type { RequestOptions } from '@/types/request';
 import qs from 'qs';
 import { isHttpSuccess } from './shared';
 
