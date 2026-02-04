@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { ArrowLeft, Home } from 'lucide-vue-next';
 import { useRouter } from 'vue-router';
+import { LucideArrowLeft, LucideHome } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const router = useRouter();
 
 function goHome() {
-  router.push('/');
+  router.push('/auth');
 }
 
 function goBack() {
@@ -23,9 +23,7 @@ function goBack() {
       <Card class="overflow-hidden">
         <CardContent class="grid gap-6 p-6 md:p-8">
           <div class="flex flex-col items-center gap-2 text-center">
-            <div class="text-primary font-mono text-8xl font-bold">
-              404
-            </div>
+            <div class="text-primary font-mono text-8xl font-bold">404</div>
             <h1 class="text-2xl font-bold">
               {{ $t('common.pageNotFound') }}
             </h1>
@@ -34,13 +32,13 @@ function goBack() {
             </p>
           </div>
 
-          <div class="flex gap-4">
+          <div class="flex gap-2">
             <Button variant="outline" class="flex-1" @click="goBack">
-              <ArrowLeft class="mr-2 h-4 w-4" />
+              <LucideArrowLeft class="size-4" />
               {{ $t('common.goBack') }}
             </Button>
             <Button class="flex-1" @click="goHome">
-              <Home class="mr-2 h-4 w-4" />
+              <LucideHome class="size-4" />
               {{ $t('common.goHome') }}
             </Button>
           </div>

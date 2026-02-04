@@ -124,16 +124,13 @@ onBeforeUnmount(() => {
             required
           />
 
-          <div
-            class="relative w-22 shrink-0 rounded-lg md:w-28"
-            @click="getImgCaptcha"
-          >
+          <div class="relative w-22 shrink-0 md:w-28" @click="getImgCaptcha">
             <img
               v-if="captchaImg"
               :src="captchaImg"
               alt="Captcha"
-              class="h-full w-full object-contain hover:cursor-pointer"
-            >
+              class="size-full rounded-lg object-contain hover:cursor-pointer"
+            />
 
             <div
               v-if="isCaptchaExpired"
