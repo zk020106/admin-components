@@ -4,7 +4,7 @@ import type { ClassType } from '@/types/basic';
 import { computed, ref } from 'vue';
 
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
-import { cn } from '@/utils';
+import { cn } from '@/lib/utils';
 
 interface Props {
   class?: ClassType;
